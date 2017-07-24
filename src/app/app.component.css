@@ -1,0 +1,13 @@
+/*Global Variable*/
+.container {
+  display: flex;
+}
+/*Nav-Bar*/
+ul {
+  display: flex;
+  flex-direction: row;
+}
+li {
+  list-style: none;
+  padding: .5em;
+}

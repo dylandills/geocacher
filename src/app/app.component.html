@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="nav">
+    <ul>
+      <li><a routerLink="">Geocache Em All!</a></li>
+      <li><a routerLink="geocache-form">Hide and Seek</a></li>
+      <li><a routerLink="prestige">Prestige</a></li>
+    </ul>
+  </div>
+
+  <div class="main-section">
+  <h1 class="name">{{title}}</h1>
+    <router-outlet></router-outlet>
+  </div>
+</div>

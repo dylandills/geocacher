@@ -2,38 +2,37 @@
   <div class="latLngForm">
     <form>
       <div>
-        <label for="lat">LATITUDE</label>
+        <label for="lat">Latitude</label>
         <input type="text" #lat placeholder="45.523062">
       </div>
       <div>
-        <label for="lng">LONGITUDE</label>
+        <label for="lng">Longitude</label>
         <input type="text" #lng placeholder="-122.676482">
       </div>
     </form>
-    <button (click)="getLocationByLatAndLong(lat.value, lng.value)">FIND BY COORDINATES</button>
+    <button (click)="getLocation(lat.value, lng.value)">Find By Coordinates</button>
   </div>
-  
   <div class="addressForm">
     <form>
     <div>
-      <label for="streetNumber">STREET NUMBER</label>
-      <input type="text" #streetNumber placeholder="1160">
+      <label for="streetNumber">Street Number</label>
+      <input type="text" #streetNumber placeholder="4936">
     </div>
     <div>
-      <label for="route">STREET ROUTE</label>
-      <input type="text" #route placeholder="NW 6th Ave">
+      <label for="route">Street</label>
+      <input type="text" #route placeholder="SW Barbur Blvd">
     </div>
     <div>
-      <label for="locality">CITY</label>
+      <label for="locality">City</label>
       <input type="text" #locality placeholder="Portland">
     </div>
     <div>
-      <label for="admnArea">STATE</label>
+      <label for="admnArea">State</label>
       <input type="text" #admnArea placeholder="OR">
     </div>
   </form>
-  <button (click)="getLocationByAddress(streetNumber.value, route.value, locality.value, admnArea.value)">FIND BY ADDRESS</button>
-  <button (click)="saveGeocache(lat.value, lng.value);false">SAVE GEOCACHE TO LOGBOOK</button>
+  <button (click)="getLocationByAddress(streetNumber.value, route.value, locality.value, admnArea.value)">Find By Address</button>
+  <button (click)="saveGeocache(lat.value, lng.value);false">Save Geocache To Prestige</button>
 
   </div>
 </div>
