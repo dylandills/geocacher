@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { GeocacheFormComponent } from './geocache-form/geocache-form.component';
 import { GeocacheAddressListComponent } from './geocache-address-list/geocache-address-list.component';
 import { GeocacheListComponent } from './geocache-list/geocache-list.component';
-import { PrestigeComponent } from './prestige/prestige.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +26,7 @@ export const firebaseConfig = {
     GeocacheFormComponent,
     GeocacheAddressListComponent,
     GeocacheListComponent,
-    PrestigeComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,

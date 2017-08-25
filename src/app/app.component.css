@@ -1,13 +1,46 @@
 /*Global Variable*/
 .container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  background-image: url('/assets/img/geocache-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 /*Nav-Bar*/
 ul {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+  margin-left: 8em;
+  margin-right: 8em;
+  background-color: #FF4B4B;
+  border: 20px solid yellow;
+  font-weight: bolder;
+  font-size: 24px;
 }
 li {
   list-style: none;
-  padding: .5em;
+  margin-right: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+}
+p {
+  margin: auto;
+  font-size: 30px;
+  background-color: #fff;
+  opacity: .95;
+  padding: 3em;
+  border: solid 5px #FF4B4B;
+  border-radius: 5px 5px 5px 5px;
 }

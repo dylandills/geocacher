@@ -1,0 +1,30 @@
+.form-wrap, .result-wrap {
+  background-color: #fff;
+  opacity: .95;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+}
+label {
+  margin-right: .5em;
+}
+input {
+  width: 30em;
+  height: 2em;
+  margin-top: 2em;
+}
+button {
+  color: #FF4B4B;
+  background: rgba(0,0,0,0);
+  border: solid 5px #FF4B4B;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1em;
+  margin-top: 1em;
+}
+button:hover {
+  background-color: #FF4B4B;
+  color: #fff;
+}
+.latLngForm {
+  margin-right: 1em;
+}

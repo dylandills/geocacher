@@ -1,9 +1,0 @@
-<h1>Your Saved Geocaches:</h1>
-<div *ngFor="let geocache of savedGeocaches | async">
-  <p>{{geocache.lat}} | {{geocache.lng}}</p>
-  <p>{{geocache.address}}</p>
-  <button (click)="deleteGeocache(geocache);false">Delete Geocache</button>
-  <br>
-  <br>
-  <br>
-</div>

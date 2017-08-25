@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GeocacheFormComponent } from './geocache-form/geocache-form.component';
 import { GeocacheListComponent } from './geocache-list/geocache-list.component';
 import { GeocacheAddressListComponent } from './geocache-address-list/geocache-address-list.component';
-import { PrestigeComponent } from './prestige/prestige.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
 {
@@ -19,8 +19,8 @@ const appRoutes: Routes = [
       component: GeocacheAddressListComponent
 },
 {
-      path: 'prestige',
-      component: PrestigeComponent
+    path: 'about',
+    component: AboutComponent
 }
 ];
 

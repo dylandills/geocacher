@@ -1,42 +1,44 @@
 <div class="container">
-  <div class="latLngForm">
-    <form>
-      <div>
-        <label for="lat">Latitude</label>
-        <input type="text" #lat placeholder="45.523062">
-      </div>
-      <div>
-        <label for="lng">Longitude</label>
-        <input type="text" #lng placeholder="-122.676482">
-      </div>
-    </form>
-    <button (click)="getLocation(lat.value, lng.value)">Find By Coordinates</button>
-  </div>
-  <div class="addressForm">
-    <form>
-    <div>
-      <label for="streetNumber">Street Number</label>
-      <input type="text" #streetNumber placeholder="4936">
+  <div class="form-wrap">
+    <div class="latLngForm">
+      <form>
+        <div>
+          <label for="lat">Latitude</label>
+          <input type="text" #lat placeholder="45.523062">
+        </div>
+        <div>
+          <label for="lng">Longitude</label>
+          <input type="text" #lng placeholder="-122.676482">
+        </div>
+      </form>
+      <button (click)="getLocation(lat.value, lng.value)">Find By Coordinates</button>
     </div>
-    <div>
-      <label for="route">Street</label>
-      <input type="text" #route placeholder="SW Barbur Blvd">
+    <div class="addressForm">
+      <form>
+        <div>
+          <label for="streetNumber">Street Number</label>
+          <input type="text" #streetNumber placeholder="4936">
+        </div>
+        <div>
+          <label for="route">Street</label>
+          <input type="text" #route placeholder="SW Barbur Blvd">
+        </div>
+        <div>
+          <label for="locality">City</label>
+          <input type="text" #locality placeholder="Portland">
+        </div>
+        <div>
+          <label for="admnArea">State</label>
+          <input type="text" #admnArea placeholder="OR">
+        </div>
+      </form>
+      <button (click)="getLocationByAddress(streetNumber.value, route.value, locality.value, admnArea.value)">Find By Address</button>
+
     </div>
-    <div>
-      <label for="locality">City</label>
-      <input type="text" #locality placeholder="Portland">
-    </div>
-    <div>
-      <label for="admnArea">State</label>
-      <input type="text" #admnArea placeholder="OR">
-    </div>
-  </form>
-  <button (click)="getLocationByAddress(streetNumber.value, route.value, locality.value, admnArea.value)">Find By Address</button>
-  <button (click)="saveGeocache(lat.value, lng.value);false">Save Geocache To Prestige</button>
 
   </div>
 </div>
-<div class="results">
+<div class="results result-wrap">
   <div *ngIf="locations">
     <app-geocache-list [childLocations] ="locations"></app-geocache-list>
   </div>
